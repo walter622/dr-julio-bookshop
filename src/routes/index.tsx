@@ -12,7 +12,7 @@ import retrato from "@/assets/dr-julio-peres-retrato.webp.asset.json";
 import quadrado from "@/assets/dr-julio-peres-quadrado.jpeg.asset.json";
 
 /** Troque aqui o link do checkout da Hotmart */
-const HOTMART_URL = "https://pay.hotmart.com/SEU-LINK-AQUI";
+const HOTMART_URL = "https://pay.hotmart.com/R90755263X?off=x019axkt";
 /** Cole aqui o link de incorporação do vídeo (ex.: https://www.youtube.com/embed/ID ou https://player.vimeo.com/video/ID) */
 const VIDEO_EMBED_URL = "";
 
