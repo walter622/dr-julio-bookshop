@@ -99,14 +99,6 @@ function Reveal({ children, className = "" }: { children: ReactNode; className?:
   );
 }
 
-function Eyebrow({ children, light = false }: { children: ReactNode; light?: boolean }) {
-  return (
-    <p className={`mb-4 font-display text-xs font-semibold uppercase tracking-[0.2em] ${light ? "text-cta" : "text-accent"}`}>
-      {children}
-    </p>
-  );
-}
-
 function H2({ children, light = false }: { children: ReactNode; light?: boolean }) {
   return (
     <h2 className={`text-balance text-2xl font-semibold md:text-[2.1rem] ${light ? "text-primary-foreground" : ""}`}>
@@ -175,7 +167,6 @@ function Index() {
         <section ref={heroRef} className="bg-secondary pb-20 pt-28 md:pb-28 md:pt-36">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[1.15fr_1fr]">
             <Reveal>
-              <Eyebrow>E-book • Dr. Julio Peres</Eyebrow>
               <h1 className="text-balance text-[1.9rem] font-bold md:text-[2.7rem]">
                 Mude a forma como você interpreta sua história e comece a viver com mais clareza, equilíbrio emocional e direção
               </h1>
@@ -215,7 +206,6 @@ function Index() {
         <section className="bg-background py-20 md:py-28">
           <div className="mx-auto max-w-4xl px-5">
             <Reveal className="text-center">
-              <Eyebrow>Assista antes de continuar</Eyebrow>
               <H2>Por que algumas pessoas continuam sofrendo por histórias que já aconteceram há muito tempo?</H2>
             </Reveal>
             <Reveal className="mt-10">
@@ -371,7 +361,6 @@ function Index() {
         <section className="bg-primary py-20 md:py-28">
           <div className="mx-auto max-w-6xl px-5">
             <Reveal className="mx-auto max-w-[720px] text-center">
-              <Eyebrow light>O que você vai encontrar no e-book</Eyebrow>
               <H2 light>Palavras que ajudam você a olhar para sua vida com mais consciência</H2>
               <p className="mt-6 text-primary-foreground/80">
                 Dentro do e-book, Dr. Julio Peres conduz reflexões sobre palavras fundamentais da experiência humana.
@@ -456,7 +445,6 @@ function Index() {
               </div>
             </Reveal>
             <Reveal className="space-y-4">
-              <Eyebrow>Quem é o autor</Eyebrow>
               <H2>Dr. Julio Peres</H2>
               <span className="rule-orange my-7" />
               <p className="font-semibold text-foreground">
@@ -542,7 +530,6 @@ function Index() {
         <section className="bg-secondary py-20 md:py-28">
           <Reveal className="mx-auto max-w-[720px] px-5">
             <div className="text-center">
-              <Eyebrow>Dúvidas frequentes</Eyebrow>
               <H2>Perguntas frequentes</H2>
             </div>
             <Accordion type="single" collapsible className="mt-10 rounded-2xl bg-background px-6 shadow-soft">
