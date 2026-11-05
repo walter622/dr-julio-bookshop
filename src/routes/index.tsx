@@ -519,7 +519,7 @@ function Index() {
                 />
               </div>
               <div className="text-center md:text-left">
-                <H2>Acesse agora o e-book Razão & Prática</H2>
+                <H2>Acesse agora o e‑book Razão & Prática</H2>
                 <p className="mt-5 text-muted-foreground">
                   Uma leitura para quem deseja compreender melhor sua história, suas escolhas e os significados que influenciam sua forma de viver.
                 </p>
