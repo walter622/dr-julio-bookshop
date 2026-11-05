@@ -99,14 +99,6 @@ function Reveal({ children, className = "" }: { children: ReactNode; className?:
   );
 }
 
-function Eyebrow({ children, light = false }: { children: ReactNode; light?: boolean }) {
-  return (
-    <p className={`mb-4 font-display text-xs font-semibold uppercase tracking-[0.2em] ${light ? "text-cta" : "text-accent"}`}>
-      {children}
-    </p>
-  );
-}
-
 function H2({ children, light = false }: { children: ReactNode; light?: boolean }) {
   return (
     <h2 className={`text-balance text-2xl font-semibold md:text-[2.1rem] ${light ? "text-primary-foreground" : ""}`}>
