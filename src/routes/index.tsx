@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import ebookImg from "@/assets/ebook-tablet.jpg";
 import retrato from "@/assets/dr-julio-peres-retrato.webp.asset.json";
+import logo from "@/assets/logo-clinica-julio-peres.png.asset.json";
 import quadrado from "@/assets/dr-julio-peres-quadrado.jpeg.asset.json";
 
 /** Troque aqui o link do checkout da Hotmart */
@@ -128,16 +129,10 @@ function Bullets({ items }: { items: string[] }) {
 }
 
 function Logo({ light = false }: { light?: boolean }) {
-  return (
-    <span className="flex flex-col leading-none">
-      <span className={`font-display text-lg font-semibold ${light ? "text-primary-foreground" : "text-primary"}`}>
-        Dr. Julio Peres
-      </span>
-      <span className={`mt-1 text-[0.68rem] uppercase tracking-[0.22em] ${light ? "text-primary-foreground/70" : "text-muted-foreground"}`}>
-        Psicologia clínica
-      </span>
-    </span>
+  const img = (
+    <img src={logo.url} alt="Clínica Julio Peres" className="h-11 w-auto md:h-14" width={1074} height={583} />
   );
+  return light ? <span className="inline-flex rounded-2xl bg-background px-5 py-3">{img}</span> : img;
 }
 
 function Index() {
